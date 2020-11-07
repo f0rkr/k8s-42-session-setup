@@ -3,7 +3,7 @@ echo "#################### THIS SETUP SAVED ON GOINFRE IN ORDER TO SAVE SPACE ##
 # Setup variables 
 BREW_HOME=$HOME/.brew
 BREW_GOINFRE=$HOME/goinfre/.brew
-DOCKER_HOME=$DOCKER_HOME
+DOCKER_HOME=$HOME/.docker
 DOCKER_GOINFRE=$HOME/goinfre/.docker
 MINIKUBE_HOME=$HOME/.minikube
 MINIKUBE_GOINFRE=$HOME/goinfre/.minikube
