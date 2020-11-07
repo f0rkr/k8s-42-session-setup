@@ -33,4 +33,11 @@ then
 	ln -s $MINIKUBE_GOINFRE $MINIKUBE_HOME
 fi
 
+#setup .zshrc file
+echo "export PATH=$HOME/goinfre/.brew/bin:$PATH" > $HOME/.zshrc
+echo "docker-machine start default 1>/dev/null 2>/dev/null" >> $HOME/.zshrc
+echo "docker-machine env default 1>/dev/null" >> $HOME/.zshrc
+echo "eval $(docker-machine env default)" >> $HOME/.zshrc
+source $HOME/.zshrc
+
 echo "[+] DONE "
